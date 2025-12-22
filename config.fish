@@ -51,9 +51,6 @@ if test "$action" = "--set"
     #git
     create_dir ~/.config/git
     set_symlink ~/.mydots/git/config ~/.config/git/config
-    #zed
-    create_dir ~/.config/zed
-    move_and_replace ~/.mydots/zed/settings.json ~/.config/zed/settings.json
 else if test "$action" = "--unset"
     #alacritty
     remove_symlink ~/.config/alacritty/alacritty.toml
@@ -63,8 +60,6 @@ else if test "$action" = "--unset"
     remove_symlink ~/.config/starship/starship.toml
     #git
     remove_symlink ~/.config/git/config
-    #zed
-    delete ~/.config/zed/settings.json
 else
     echo "Usage: ./symlinks.fish [--link|--unlink]"
 end

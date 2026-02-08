@@ -21,18 +21,18 @@ theme = "nord"
 [[row]]
   ratio = 50
   [[row.child]]
-    ratio = 50
+    ratio = 55
     type = "cpu"
   [[row.child]]
-    ratio = 50
-    type = "proc"
-    default = true
+    ratio = 45
+    type = "mem"
 
 [[row]]
   ratio = 50
   [[row.child]]
-    ratio = 50
-    type = "mem"
+    ratio = 55
+    type = "proc"
+    default = true
   [[row.child]]
-    ratio = 50
+    ratio = 45
     type = "net"

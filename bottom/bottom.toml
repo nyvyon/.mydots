@@ -1,0 +1,38 @@
+[flags]
+hide_avg_cpu = true
+cpu_left_legend = true
+hide_table_gap = true
+disable_click = true
+disable_advanced_kill = true
+hide_k_threads = true
+enable_cache_memory = false
+memory_legend = "top-left"
+network_legend = "top-left"
+
+
+[processes]
+columns = ["Name", "CPU%", "Mem%", "R/s", "W/s", "State"]
+
+
+[styles]
+theme = "nord"
+
+
+[[row]]
+  ratio = 50
+  [[row.child]]
+    ratio = 50
+    type = "cpu"
+  [[row.child]]
+    ratio = 50
+    type = "proc"
+    default = true
+
+[[row]]
+  ratio = 50
+  [[row.child]]
+    ratio = 50
+    type = "mem"
+  [[row.child]]
+    ratio = 50
+    type = "net"

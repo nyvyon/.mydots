@@ -13,11 +13,6 @@ network_legend = "top-left"
 [processes]
 columns = ["Name", "CPU%", "Mem%", "R/s", "W/s", "State"]
 
-
-[styles]
-theme = "nord"
-
-
 [[row]]
   ratio = 50
   [[row.child]]

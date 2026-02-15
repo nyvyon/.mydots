@@ -1,3 +1,4 @@
+# --- general settings ---
 [flags]
 hide_avg_cpu = true
 cpu_left_legend = true
@@ -10,9 +11,12 @@ memory_legend = "top-left"
 network_legend = "top-left"
 
 
+# --- process table ---
 [processes]
 columns = ["Name", "CPU%", "Mem%", "R/s", "W/s", "State"]
 
+
+# --- layout ---
 [[row]]
   ratio = 50
   [[row.child]]

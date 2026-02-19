@@ -11,7 +11,8 @@ set configs \
     starship/starship.toml \
     git/config \
     kitty/kitty.conf \
-    bottom/bottom.toml
+    bottom/bottom.toml \
+    tmux/tmux.conf
 
 
 function create_symlinks

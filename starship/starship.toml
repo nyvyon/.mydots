@@ -1,5 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+
+# --- battery ---
+[battery]
+format = "[$percentage]($style) "
+
+
+# --- nerd font symbols ---
 [aws]
 symbol = " "
 

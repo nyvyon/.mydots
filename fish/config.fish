@@ -28,6 +28,6 @@ if status is-interactive
     starship init fish | source
     zoxide init fish | source
     if not set -q TMUX
-        tmux new -As main
+        tmux new -As main -n terminal
     end
 end
